@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aufgabe 1: HTML5: semantisches Dokument</title>
+
+  <style>
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-margin: 3rem 0 0 0;
+  }
+
+    body {
+      max-width: 820px;
+      margin: 0 auto;
+      font-family: monospace;
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+
+    section {
+      /* min-height: 100vh; */
+      padding: 2rem 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    header img {
+      padding: 2rem 0;
+      width: 100%;
+    }
+
+    nav {
+      margin: 2rem 0;
+      position: sticky;
+      top: 0;
+      padding: 1rem;
+      background: white;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: inherit;
+    }
+
+    h1, h2, h3, h4 {
+      text-align: center;
+      margin: 0;
+      margin-bottom: 2rem;
+    }
+
+    form .input:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      padding: 4rem 0 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./pics/Logo.svg" alt="Jahreszeiten">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#Herbst">Herbst</a></li>
+      <li><a href="#Frühling">Frühling</a></li>
+      <li><a href="#Quiz">Quiz</a></li>
+
+    </ul>
+  </nav>
+
+  <hr>
+
+
+  <main>
+    <section id="Herbst">
+      <h2>🍂 Herbst</h2>
+      <img src="./pics/annie-spratt-epcsn8Ed8kY-unsplash.png" alt="Herbstblätter">
+      <p>Der Herbst ist die Jahreszeit der warmen Farben, heißen Tees und gemütlichen Abenden am Kamin.
+      </p>
+    </section>
+
+    <hr>
+
+    <section id="Frühling">
+      <h2>🌱 Frühling</h2>
+      <img src="./pics/remi-walle-Ui3bOgnjtl0-unsplash.png" alt="Grüne Blätter im Gegenlicht">
+      <p>Der Frühling für viele die schönste Jahreszeit, da das Blühen der Blüten eines der befreiendsten Gefühle nach einem harten, kalten Winter sein kann.</p>
+      <img src="./pics/lera-freeland-9MVVXa5BzlY-unsplash.png" alt="Sprossen eines Glücksbaums">
+    </section>
+
+    <section id="Quiz">
+      <h2>🗳️ Ein Quiz für unsere Besucher:</h2>
+
+      <form action="/">
+        <div class="input">
+          <label for="form_name">Dein Name</label>
+          <input type="text" id="form_name" placeholder="Maxi Mustermann" required>
+        </div>
+        
+        <div class="input">
+          <label for="form_email">Deine Email</label>
+          <input type="email" id="form_email" placeholder="hello@example.com" required>
+        </div>
+
+        <div class="input">
+          <label for="form_over18">Bist du über 18 Jahre alt?</label>
+          <input type="checkbox" name="form_over18" id="form_over18" required>
+        </div>
+      
+        <div class="input">
+          <span>Was ist deine Lieblingsjahreszeit?</span>
+  
+          <div class="radio">
+            <input type="radio" name="form_season" id="form_season_spring" checked>
+            <label for="form_season_spring">Frühling</label>
+          </div>
+  
+          <div class="radio">
+            <input type="radio" name="form_season" id="form_season_summer">
+            <label for="form_season_summer">Sommer</label>
+          </div>
+  
+          <div class="radio">
+            <input type="radio" name="form_season" id="form_season_autumn">
+            <label for="form_season_autumn">Herbst</label>
+          </div>
+  
+          <div class="radio">
+            <input type="radio" name="form_season" id="form_season_winter">
+            <label for="form_season_winter">Winter</label>
+          </div>
+        </div>
+
+        <div class="input">
+          <label for="form_fav_food">Was ist dein Lieblingsgericht?</label>
+          <input type="text" name="form_fav_food" list="foods" id="form_fav_food">
+      
+          <datalist id="foods">
+            <option value="Burger">Burger</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Sushi">Sushi</option>
+            <option value="Grünkohl">Grünkohl</option>
+         </datalist>
+        </div>
+        
+       <div class="input">
+         <input type="reset" value="Formular zurücksetzen">
+         <input type="submit" value="Abschicken">
+       </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy2020 Malte Janßen (908287) - <a href="https://malts.me" rel="noopener noreferrer">malts.me</a>
+  </footer>
+
+</body>
+</html>
