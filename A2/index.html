@@ -65,6 +65,29 @@
       margin-bottom: 1rem;
     }
 
+    input[type=text], input[type=email] {
+      font-family: inherit;
+      width: 100%;
+      padding: .5rem;
+    }
+
+    input[type=submit], input[type=reset] {
+      float: right;
+      padding: .8rem 1rem;
+      font-family: inherit;
+      border: 1px solid black;
+      -webkit-appearance: none;
+      margin-left: 1rem;
+    }
+
+    input[type=reset] {
+      background: #eecac4;
+    }
+
+    input[type=submit] {
+      background: #c3dbb8;
+    }
+
     footer {
       padding: 4rem 0 1rem 0;
       text-align: center;
@@ -108,7 +131,7 @@
     <section id="Quiz">
       <h2>🗳️ Ein Quiz für unsere Besucher:</h2>
 
-      <form action="/">
+    <form action="/">
         <div class="input">
           <label for="form_name">Dein Name</label>
           <input type="text" id="form_name" placeholder="Maxi Mustermann" required>
@@ -121,7 +144,7 @@
 
         <div class="input">
           <label for="form_over18">Bist du über 18 Jahre alt?</label>
-          <input type="checkbox" name="form_over18" id="form_over18" required>
+          <input type="checkbox" name="form_over18" id="form_over18">
         </div>
       
         <div class="input">
@@ -161,15 +184,15 @@
         </div>
         
        <div class="input">
-         <input type="reset" value="Formular zurücksetzen">
          <input type="submit" value="Abschicken">
+         <input type="reset" value="Formular zurücksetzen">
        </div>
       </form>
     </section>
   </main>
 
   <footer>
-    &copy2020 Malte Janßen (908287) - <a href="https://malts.me" rel="noopener noreferrer">malts.me</a>
+    &copy2020 Malte Janßen (908287) - <a target="_blank" href="https://malts.me" rel="noopener noreferrer">malts.me</a> - <a target="_blank" href="https://github.com/SkyGuardian42/WebEngineering"  rel="noopener noreferrer">GitHub</a>
   </footer>
 
 </body>
